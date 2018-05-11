@@ -20,4 +20,11 @@ class PeliculasController extends Controller
 		return view('peliculas.listado')->with('movies', $this->peliculas);
 	}
 
+	public function buscarPeliculaId($id)
+	{
+		$pelicula = array_key_exists($id, $this->peliculas) ? $this->peliculas[$id] : null;
+		
+		return view('peliculas.peliculas')->with('movie', $pelicula);
+	}
+
 }

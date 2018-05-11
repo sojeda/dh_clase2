@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 
 Route::get('peliculas', 'PeliculasController@listado');
+
+Route::get('peliculas/{id}', 'PeliculasController@buscarPeliculaId');
