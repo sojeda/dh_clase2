@@ -23,8 +23,13 @@ class PeliculasController extends Controller
 	public function buscarPeliculaId($id)
 	{
 		$pelicula = array_key_exists($id, $this->peliculas) ? $this->peliculas[$id] : null;
-		
+
 		return view('peliculas.peliculas')->with('movie', $pelicula);
+	}
+
+	public function agregarPelicula()
+	{
+		return view('peliculas.nuevaPelicula');
 	}
 
 }

@@ -7,9 +7,11 @@
 <body>
 	<h1>Listado de Peliculas</h1>
 	<ul>
-		@foreach($movies as $movie)
-			<li>{{ $movie }}</li>
-		@endforeach
+		@isset($movies)
+			@foreach($movies as $movie)
+				<li>{{ $movie }}</li>
+			@endforeach
+		@endisset	
 	</ul>
 </body>
 </html>
