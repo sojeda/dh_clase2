@@ -20,4 +20,6 @@ Route::get('peliculas', 'PeliculasController@listado');
 
 Route::get('peliculas/{id}', 'PeliculasController@buscarPeliculaId');
 
-Route::get('agregarPelicula', 'PeliculasController@agregarPelicula');
+Route::get('agregarPelicula', 'PeliculasController@nuevaPelicula');
+
+Route::post('agregarPelicula', 'PeliculasController@agregarPelicula');

@@ -27,9 +27,14 @@ class PeliculasController extends Controller
 		return view('peliculas.peliculas')->with('movie', $pelicula);
 	}
 
-	public function agregarPelicula()
+	public function nuevaPelicula()
 	{
 		return view('peliculas.nuevaPelicula');
+	}
+
+	public function agregarPelicula()
+	{
+		return 'Película agregada con éxito';
 	}
 
 }
