@@ -5,10 +5,11 @@
 	<title>Peliculas</title>
 </head>
 <body>
+	<h1>Listado de Peliculas</h1>
 	<ul>
-		<?php foreach ($movies as $movie) {
-			echo "<li>" . $movie . "</li>";
-		} ?>
+		@foreach($movies as $movie)
+			<li>{{ $movie }}</li>
+		@endforeach
 	</ul>
 </body>
 </html>
